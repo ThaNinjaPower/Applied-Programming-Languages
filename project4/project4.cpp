@@ -132,24 +132,10 @@ int main() {
 	// Demonstrate traversion of the list
 	myElement.traverseStack();
 	
-	// Demonstrate deletion of middle element
-	myElement.popElement();
-	myElement.traverseStack();
-	
-	// Demonstrate addition of one element
-	myElement.pushElement(8);
-	myElement.traverseStack();
-	
-	// Demonstrate deletion of first element
-	myElement.popElement();
-	myElement.traverseStack();
-	
-	// Demonstrate deletion of last element
-	myElement.popElement();
-	myElement.traverseStack();
-	
-	myElement.popElement();
-	myElement.traverseStack();
+	for (int i = 0; i < 3; i++) {
+		myElement.popElement();
+		myElement.traverseStack();
+	}
 	
 	for (int i = 0; i < 7; i++) {
 		myElement.popElement();
