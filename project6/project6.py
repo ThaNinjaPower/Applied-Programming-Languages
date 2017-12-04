@@ -79,17 +79,17 @@ for i in range(newColumnSize) :
 	
 # Shifts the word puzzle slanting backward to line up diagonals
 iterNum = 0
-for line in puzzleFileFDiag :
+for line in puzzleFileBDiag :
 	# Add col - 1 spaces after the first line
 	if (iterNum == 0) :
 		for i in range(spaceLengthDiag) :
-			backSpaceListF.append(' ')
+			backSpaceListB.append(' ')
 	# Remove one space from back and add one space to front
 	elif (iterNum >= 1) :
-		backSpaceListF.remove(' ')
-		frontSpaceListF.append(' ')
+		backSpaceListB.remove(' ')
+		frontSpaceListB.append(' ')
 	
-	tempBDiagRow.append(frontSpaceListF + line.split() + backSpaceListF)
+	tempBDiagRow.append(frontSpaceListB + line.split() + backSpaceListB)
 	iterNum = iterNum + 1
 
 for i in range(newColumnSize) :
